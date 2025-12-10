@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c9ff"/>
+      <stop offset="100%" stop-color="#6a5af9"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7bed9f"/>
+      <stop offset="100%" stop-color="#2ecc71"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="url(#bgGrad)"/>
+  <path d="M256 360c-40 0-70-24-88-52 30 16 60 18 88 12 28-6 54-22 74-48-4 52-32 88-74 88z" fill="#ffcf73" opacity="0.9"/>
+  <g transform="translate(0,-30)">
+    <path d="M256 340c-6 0-10-4-10-10V210c0-6 4-10 10-10s10 4 10 10v120c0 6-4 10-10 10z" fill="#ffffff"/>
+    <path d="M256 210c-40-40-90-40-120-10 10 40 50 70 100 70" fill="url(#leafGrad)"/>
+    <path d="M256 210c30-34 72-40 104-26-4 38-32 76-84 80" fill="url(#leafGrad)"/>
+  </g>
+  <text x="50%" y="80%" text-anchor="middle" font-family="Poppins, system-ui, sans-serif" font-size="64" fill="#ffffff" font-weight="700">
+    NUÔI THẮNG
+  </text>
+</svg>

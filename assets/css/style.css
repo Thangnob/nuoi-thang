@@ -1,0 +1,149 @@
+
+:root {
+  --primary: #6a5af9;
+  --secondary: #00c9ff;
+  --accent: #ffc857;
+  --bg-soft: #f5f7ff;
+  --text-main: #222;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #eef1ff;
+  margin: 0;
+  color: var(--text-main);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: white;
+  padding: 50px 20px 70px;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+}
+.hero-avatar {
+  width: 130px; height: 130px;
+  border-radius: 30px;
+  object-fit: cover;
+  border: 4px solid rgba(255,255,255,0.7);
+  margin-bottom: 12px;
+}
+.hero-sub {
+  margin: 16px auto 24px;
+  max-width: 340px;
+  background: rgba(0,0,0,0.12);
+  padding: 12px 16px;
+  border-radius: 12px;
+  line-height: 1.4;
+}
+.btn-primary {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* GENERAL SECTIONS */
+.section {
+  padding: 30px 20px;
+}
+.section h2 {
+  color: var(--primary);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* CARDS */
+.card-grid {
+  display: grid;
+  gap: 16px;
+}
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+}
+.card h3 {
+  margin: 8px 0;
+}
+.icon {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+/* CAM KẾT */
+.yellow-box {
+  background: #fff8dc;
+  padding: 20px;
+  border-left: 6px solid var(--accent);
+  border-radius: 16px;
+}
+.yellow-box ul {
+  padding-left: 20px;
+}
+
+/* SO SÁNH */
+.compare {
+  border-radius: 20px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+.compare-red { background: #ffe6e6; }
+.compare-green { background: #e6ffed; }
+.compare h3 { margin-top: 0; }
+
+/* CHI TIÊU */
+.usage-list li {
+  margin-bottom: 6px;
+}
+
+/* CTA */
+.cta-box {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-radius: 24px;
+  padding: 24px 20px 28px;
+  text-align: center;
+}
+.logo {
+  width: 120px;
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 16px 10px 24px;
+  color: #555;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  main-wrapper {
+    max-width: 900px;
+  }
+  .hero {
+    border-radius: 0 0 40px 40px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .section {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
