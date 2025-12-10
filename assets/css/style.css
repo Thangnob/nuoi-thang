@@ -12,10 +12,35 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: radial-gradient(circle at top, #eef1ff 0, #dde3ff 40%, #f7f7ff 100%);
   color: var(--text-main);
+}
+
+/* FADE-IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+.section:nth-of-type(1).fade-in { animation-delay: 0.05s; }
+.section:nth-of-type(2).fade-in { animation-delay: 0.1s; }
+.section:nth-of-type(3).fade-in { animation-delay: 0.15s; }
+.section:nth-of-type(4).fade-in { animation-delay: 0.2s; }
+.section:nth-of-type(5).fade-in { animation-delay: 0.25s; }
+.section:nth-of-type(6).fade-in { animation-delay: 0.3s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* HERO */
@@ -172,6 +197,28 @@ body {
   margin-top: 4px;
 }
 
+/* SAO KÊ REALTIME */
+.section-soft {
+  background: var(--bg-soft);
+  border-radius: 32px;
+  margin: 10px 14px;
+  padding: 24px 18px 26px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+}
+
+.sheet-embed {
+  margin-top: 14px;
+}
+
+.sheet-placeholder {
+  background: #fff;
+  border-radius: 18px;
+  padding: 14px 16px;
+  border: 1px dashed #c4c8ff;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 /* CTA */
 .cta-box {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -229,5 +276,9 @@ body {
 
   .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-soft {
+    max-width: 900px;
   }
 }
